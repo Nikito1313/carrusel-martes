@@ -1,0 +1,125 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background: linear-gradient(to bottom right, #ffafbd, #ffc3a0);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+
+.carousel-container {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.image-container {
+    width: 60%;
+    padding-right: 20px;
+}
+
+.image-container img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.description {
+    display: none;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
+    width: 40%;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Dancing Script', cursive;
+    color: #fff;
+}
+
+button.show-description {
+    background-color: #ff6b6b;
+    border: none;
+    color: white;
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+button.show-description:hover {
+    background-color: #ff4c4c;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+    user-select: none;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.interaction {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.interaction button {
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #ff6b6b;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.interaction button:hover {
+    background-color: #ff4c4c;
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #fff;
+}
